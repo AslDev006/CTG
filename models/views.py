@@ -5,7 +5,7 @@ from rest_framework import generics, permissions
 from .serializers import CustomUserUpdateSerializer
 from django.contrib.auth import authenticate, login, logout
 from .models import CustomUser
-from .serializers import SignupSerializer, LoginSerializer, UserSerializer, LogoutSerializer
+from .serializers import SignupSerializer
 from rest_framework.permissions import AllowAny
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
