@@ -12,12 +12,12 @@ urlpatterns = [
     path('api/schema/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
     path('admin/', admin.site.urls),
+    path('api/v1/emerging/', include('emerging.urls')),
 
 ] + i18n_patterns(
     path('i18n/', include('django.conf.urls.i18n')),
     path('api/v1/', include('models.urls')),
     path('api/v1/about/', include('about.urls')),
-    path('api/v1/emerging/', include('emerging.urls')),
     path('api/v1/tour/', include('tour.urls')),
     path('api/v1/gallery/', include('gallery.urls')),
 )

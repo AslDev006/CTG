@@ -136,7 +136,7 @@ STATICFILES_DIRS = [
 
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "CTG ",
+    "TITLE": "Creative Travel Group",
     "DESCRIPTION": "Documentation of API endpoints of Chop CRM",
     "VERSION": "1.0.0",
     "SERVE_PERMISSIONS": ["rest_framework.permissions.AllowAny"],
